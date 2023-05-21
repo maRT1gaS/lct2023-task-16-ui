@@ -1,0 +1,21 @@
+.List {
+	display: grid;
+	grid-template-columns: repeat(4, 230px);
+	gap: 50px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+	.List {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.List {
+		grid-template-columns: repeat(4, 230px);
+		justify-content: start;
+		overflow-x: scroll;
+		padding: 10px;
+	}
+}

@@ -1,0 +1,1 @@
+export { AboutPlatform } from './AboutPlatform';

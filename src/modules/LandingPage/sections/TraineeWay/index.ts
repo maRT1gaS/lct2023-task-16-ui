@@ -1,0 +1,1 @@
+export { TraineeWay } from './TraineeWay';

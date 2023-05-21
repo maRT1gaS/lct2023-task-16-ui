@@ -1,0 +1,17 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: var(--font-inter);
+	color: var(--primary-text-color);
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#__next {
+	height: 100%;
+	width: 100%;
+}

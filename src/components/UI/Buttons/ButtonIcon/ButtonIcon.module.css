@@ -1,0 +1,23 @@
+.ButtonIcon {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+
+.ButtonIcon--sm {
+	padding: 6px;
+}
+
+.ButtonIcon--bg {
+	padding: 0px;
+}
+
+.BorderRound {
+	border-radius: 50px;
+}
+
+.ButtonIcon:hover {
+	background-image: linear-gradient(rgba(29, 29, 29, 0.09), rgba(29, 29, 29, 0.09));
+}

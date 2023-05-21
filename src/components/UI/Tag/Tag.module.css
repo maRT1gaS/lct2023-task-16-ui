@@ -1,0 +1,22 @@
+.Tag {
+	padding: 7px 32px;
+	background: var(--white-color);
+	box-shadow: 2px 4px 4px rgba(44, 21, 81, 0.5);
+	border-radius: 104px;
+
+	text-align: center;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 29px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.Tag:-webkit-any-link {
+	color: inherit;
+}
+
+.Tag:hover,
+.ActiveTag {
+	color: var(--orange-color);
+}

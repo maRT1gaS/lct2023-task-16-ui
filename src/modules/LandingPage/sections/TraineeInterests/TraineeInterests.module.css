@@ -1,0 +1,65 @@
+.Content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 42px;
+}
+
+.JobsList {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	grid-template-columns: repeat(4, auto);
+}
+
+.LookAllWrap {
+	box-shadow: 8px 8px 10px 5px rgba(102, 51, 152, 0.1);
+	border-radius: 20px;
+	background: var(--white-color);
+	padding: 35px 8px;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	gap: 24px;
+
+	max-width: 266px;
+	width: 100%;
+}
+
+.LookAllText {
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 30px;
+}
+
+.LookAllTitle {
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 69px;
+}
+
+.LookAllTitleCount {
+	color: var(--torch-red-color);
+}
+
+@media screen and (max-width: 1440px) {
+	.JobsList {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.JobsList {
+		width: 100%;
+		overflow-x: scroll;
+		grid-template-columns: repeat(4, max-content);
+		justify-content: start;
+		gap: 16px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
+}
+/* grid-template-columns: repeat(auto-fill, 100px); */

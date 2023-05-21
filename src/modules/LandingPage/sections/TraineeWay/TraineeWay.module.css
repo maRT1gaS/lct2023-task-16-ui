@@ -1,0 +1,88 @@
+.TraineeWay {
+	display: grid;
+	width: 100%;
+	grid-template-columns: max-content max-content;
+	grid-template-rows: repeat(9, auto);
+	row-gap: 80px;
+	align-items: center;
+	justify-content: center;
+	column-gap: 229px;
+}
+
+.Step {
+	position: relative;
+}
+
+.Step1 {
+	grid-row: 1 / 4;
+}
+
+.Step1::after {
+	content: url('./arrows/step1.svg');
+	position: absolute;
+	left: 425px;
+	top: -67px;
+}
+
+.Step2 {
+	grid-row: 2 / 5;
+}
+
+.Step2::after {
+	content: url('./arrows/step2.svg');
+	position: absolute;
+	right: 370px;
+	top: -5px;
+	transform: rotate(-5deg) skew(-6deg);
+}
+
+.Step3 {
+	grid-row: 4 / 6;
+}
+
+.Step3::after {
+	content: url('./arrows/step3.svg');
+	position: absolute;
+	left: 410px;
+	bottom: 50px;
+	transform: rotate(5deg);
+}
+
+.Step4 {
+	grid-row: 5 / 8;
+}
+
+.Step4::after {
+	content: url('./arrows/step4.svg');
+	position: absolute;
+	left: -200px;
+	top: 0;
+	transform: rotate(-5deg);
+}
+
+.Step5 {
+	grid-row: 6 / 10;
+}
+
+@media screen and (max-width: 1440px) {
+	.TraineeWay {
+		grid-template-rows: repeat(5, auto);
+		grid-template-columns: auto;
+		row-gap: 28px;
+	}
+
+	.Step1,
+	.Step2,
+	.Step3,
+	.Step4,
+	.Step5 {
+		grid-row: unset;
+	}
+
+	.Step1::after,
+	.Step2::after,
+	.Step3::after,
+	.Step4::after {
+		display: none;
+	}
+}

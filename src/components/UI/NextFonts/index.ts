@@ -1,0 +1,1 @@
+export { NextFonts } from './NextFonts';

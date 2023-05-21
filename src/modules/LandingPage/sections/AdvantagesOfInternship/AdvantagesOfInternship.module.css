@@ -1,0 +1,26 @@
+.List {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(3, 400px);
+	grid-template-rows: 300px;
+	justify-content: center;
+}
+
+.ListItem {
+	width: 100%;
+}
+
+.ListItemCard {
+	height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+	.List {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: auto;
+	}
+
+	.ListItemCard {
+		width: 100%;
+	}
+}

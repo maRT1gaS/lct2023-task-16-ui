@@ -1,0 +1,67 @@
+.WayCard {
+	position: relative;
+}
+
+.WayCardNumber {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	background-color: var(--texas-rose-color);
+	border-radius: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	color: var(--white-color);
+}
+
+.WayCardLeft {
+	left: -28px;
+	top: -28px;
+}
+
+.WayCardRight {
+	right: -28px;
+	top: -28px;
+}
+
+.ServiceWayCard h3 {
+	font-size: 29px;
+	line-height: 35px;
+}
+
+.ServiceWayCard p {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.ExplanationTop {
+	position: absolute;
+	transform: rotate(-23.4deg);
+	font-size: 24px;
+	line-height: 29px;
+	right: 0;
+	bottom: 10px;
+	color: var(--torch-red-color);
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgba(225, 184, 36, 0.5);
+}
+
+@media screen and (max-width: 1440px) {
+	.ServiceWayCard {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.ServiceWayCard h3 {
+		font-size: 26px;
+	}
+
+	.ServiceWayCard p {
+		font-size: 16px;
+	}
+}

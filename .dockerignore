@@ -1,0 +1,6 @@
+node_modules
+build
+yarn.lock
+pnpm-lock.yaml
+Dockerfile
+.dockerignore

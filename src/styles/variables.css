@@ -1,0 +1,19 @@
+:root {
+	--white-color: #ffffff;
+	--violet-color: #663398;
+	--light-violet-color: #9068c0;
+	--dark-violet-color: #2c1551;
+	--haiti-color: #1a1230;
+	--texas-rose-color: #ffbe55;
+	--torch-red-color: #ff0f43;
+	--green-color: #038d77;
+	--mariner-color: #3f6fd1;
+	--orange-color: #ff9c27;
+	--orange-dark-color: #ff810b;
+
+	--transparent-flamenco-color: rgba(255, 129, 11, 0.2);
+	--transparent-royal-purple-color: rgba(102, 51, 152, 0.2);
+	--transparent-cyprus-color: rgba(0, 68, 61, 0.2);
+
+	--primary-text-color: var(--haiti-color, #1a1230);
+}

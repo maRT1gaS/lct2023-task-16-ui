@@ -1,0 +1,13 @@
+.Section {
+	padding: 94.5px 0 10px 0;
+	width: 100%;
+}
+
+.SectionHeader {
+	text-align: center;
+}
+
+.SectionContent {
+	margin-top: 64px;
+	width: 100%;
+}
