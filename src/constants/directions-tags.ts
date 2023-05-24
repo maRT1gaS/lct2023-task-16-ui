@@ -1,4 +1,4 @@
-export const directions = [
+export const directionsTags = [
 	{
 		id: 1,
 		title: 'IТ-город',

@@ -1,15 +1,38 @@
-export interface IJob {
+// Jobs
+export interface IJobList {
 	id: number;
 	nameJob: string;
-	shortNameOrg: string;
-	dateStart: Date;
-	dateEnd: Date;
-	img: string;
+	nameOrg: string;
+	startOfSelection: Date;
+	endOfSelection: Date;
+	imgSrc: string;
 }
 
-export type JobsType = IJob[];
+export type ListJobsType = IJobList[];
 
-export interface IJobsData {
-	jobs: JobsType;
+export interface IListJobsData {
+	jobs: ListJobsType;
 	length: number;
+}
+
+// Job
+export interface IDetailedJob {
+	imgSrc: string;
+	rating: number;
+	nameOrg: string;
+	nameJob: string;
+	adress: string;
+	startOfSelection: Date;
+	endOfSelection: Date;
+	startOfTheInternship: Date;
+	endOfInternship: Date;
+	coordinates: CoordinatesRes;
+	responsibilities: string[];
+	requirements: string[];
+	conditions: string[];
+}
+
+interface CoordinatesRes {
+	latitude: number;
+	longitude: number;
 }

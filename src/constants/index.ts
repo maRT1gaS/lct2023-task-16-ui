@@ -1,4 +1,5 @@
 export { SWR_KEYS } from './swr-keys';
 export * from './env-config';
-export { directions } from './directions';
+export { directionsTags } from './directions-tags';
 export { isBrowser } from './browser';
+export { cookiesNames } from './cookies';

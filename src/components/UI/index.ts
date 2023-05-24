@@ -1,4 +1,3 @@
-export * from './Icons';
 export { Container } from './Container';
 export { Link } from './Link';
 export { Title } from './Title';
@@ -7,3 +6,6 @@ export { NextFonts } from './NextFonts';
 export { StatsCard } from './StatsCard';
 export { Backdrop } from './Backdrop';
 export { ButtonIcon } from './Buttons';
+
+export * from './icons';
+export * from './form';

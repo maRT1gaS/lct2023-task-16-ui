@@ -1,0 +1,41 @@
+.ContentLayout {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+	justify-content: center;
+}
+
+.InputWidth {
+	max-width: 689px;
+	width: 100%;
+}
+
+.InternsContainer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	justify-content: space-between;
+	row-gap: 50px;
+}
+
+.SearchForm {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.InternsContainer {
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.InternsContainer {
+		grid-template-columns: repeat(1, auto);
+		justify-content: space-around;
+	}
+}

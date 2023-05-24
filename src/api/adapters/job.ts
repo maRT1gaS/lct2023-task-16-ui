@@ -1,4 +1,6 @@
-import type { IJobsData } from '@/types';
-import type { IJobsRes } from '../models';
+import type { IDetailedJob, IListJobsData } from '@/types';
+import type { IJobsRes, IGetJobByIdJobRes } from '../models';
 
-export const mappedGetJobs = (jobs: IJobsRes): IJobsData => jobs;
+export const mappedGetJobs = (jobs: IJobsRes): IListJobsData => jobs;
+
+export const mappedGetJobById = (job: IGetJobByIdJobRes): IDetailedJob => job;

@@ -1,0 +1,17 @@
+.InfoBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.InfoBlockList {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.InfoBlockListItem {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}

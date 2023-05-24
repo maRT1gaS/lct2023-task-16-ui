@@ -9,3 +9,4 @@ export { ArrowUpCircleIcon } from './ArrowUpCircleIcon';
 export { MenuIcon } from './MenuIcon';
 export { CloseWithBorderIcon } from './CloseWithBorderIcon';
 export { CloseIcon } from './CloseIcon';
+export { SearchNormalIcon } from './SearchNormalIcon';

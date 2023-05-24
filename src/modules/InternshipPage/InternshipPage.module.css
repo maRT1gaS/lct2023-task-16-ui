@@ -1,0 +1,10 @@
+.Grid {
+	display: grid;
+	grid-template-columns: 307px auto;
+}
+
+.Content {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
