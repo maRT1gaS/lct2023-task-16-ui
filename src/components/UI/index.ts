@@ -6,6 +6,7 @@ export { NextFonts } from './NextFonts';
 export { StatsCard } from './StatsCard';
 export { Backdrop } from './Backdrop';
 export { ButtonIcon } from './Buttons';
+export { ImageSample } from './ImageSample'
 
-export * from './icons';
+export * from './Icons';
 export * from './form';

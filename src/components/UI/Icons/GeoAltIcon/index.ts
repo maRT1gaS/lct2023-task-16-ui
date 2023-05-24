@@ -1,0 +1,1 @@
+export { default as GeoIcon } from './geo-alt.svg';

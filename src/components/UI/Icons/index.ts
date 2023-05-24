@@ -10,3 +10,4 @@ export { MenuIcon } from './MenuIcon';
 export { CloseWithBorderIcon } from './CloseWithBorderIcon';
 export { CloseIcon } from './CloseIcon';
 export { SearchNormalIcon } from './SearchNormalIcon';
+export { GeoIcon } from './GeoAltIcon';

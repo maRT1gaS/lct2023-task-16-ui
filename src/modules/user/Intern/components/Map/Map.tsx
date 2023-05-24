@@ -1,8 +1,7 @@
 import classes from './Map.module.css'
 
 export const Map = () => {
-	<img alt=''>
-		<svg className={classes.map} viewBox="0 0 1008 615" fill="none" xmlns="http://www.w3.org/2000/svg">
+	return <svg className={classes.map} viewBox="0 0 1008 615" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="map" clip-path="url(#clip0_639_1207)">
 				<g id="extra" className={classes.platform}>
 					<g id="Frame 288">
@@ -130,7 +129,7 @@ export const Map = () => {
 						<path id="Vector_118" d="M128.337 96.3809C128.276 96.1943 128.164 96.0304 128.015 95.909C127.867 95.7877 127.687 95.7141 127.5 95.6973L121.956 94.8505L119.471 89.5756C119.392 89.4031 119.267 89.2576 119.112 89.1558C118.957 89.054 118.778 89 118.595 89C118.412 89 118.232 89.054 118.077 89.1558C117.922 89.2576 117.798 89.4031 117.718 89.5756L115.233 94.8403L109.69 95.6973C109.509 95.7242 109.34 95.8034 109.2 95.926C109.061 96.0487 108.957 96.2098 108.901 96.3911C108.849 96.5683 108.844 96.7569 108.887 96.9367C108.93 97.1164 109.019 97.2805 109.144 97.4114L113.168 101.493L112.194 107.288C112.159 107.479 112.177 107.677 112.246 107.858C112.315 108.038 112.432 108.195 112.583 108.308C112.731 108.418 112.904 108.484 113.085 108.496C113.266 108.509 113.446 108.468 113.606 108.38L118.595 105.655L123.563 108.39C123.7 108.471 123.855 108.513 124.012 108.512C124.218 108.513 124.419 108.445 124.586 108.318C124.738 108.205 124.855 108.049 124.924 107.868C124.993 107.687 125.011 107.489 124.976 107.298L124.002 101.503L128.026 97.4216C128.166 97.2968 128.27 97.1328 128.326 96.9485C128.381 96.7643 128.385 96.5675 128.337 96.3809ZM122.346 100.462C122.231 100.578 122.146 100.721 122.097 100.879C122.047 101.038 122.036 101.206 122.063 101.37L122.765 105.645L119.101 103.605C118.96 103.526 118.803 103.485 118.643 103.485C118.484 103.485 118.326 103.526 118.185 103.605L114.522 105.645L115.224 101.37C115.251 101.206 115.239 101.038 115.19 100.879C115.141 100.721 115.055 100.578 114.941 100.462L112.018 97.4012L116.12 96.7788C116.278 96.7558 116.428 96.6927 116.557 96.5948C116.686 96.497 116.79 96.3675 116.86 96.2177L118.595 92.3303L120.426 96.2279C120.496 96.3777 120.601 96.5072 120.73 96.605C120.859 96.7029 121.009 96.766 121.167 96.789L125.268 97.4114L122.346 100.462Z" fill="#1833A0" />
 					</g>
 				</g>
-				<g id="step6" className={classes.platform}>
+				<g id="step6" className={classes.platform + ' ' + classes.disabled}>
 					<g id="Mask group">
 						<mask id="mask0_639_1207" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="763" y="427" width="220" height="121">
 							<g id="Group">
@@ -471,7 +470,7 @@ export const Map = () => {
 						<path id="Vector_421" d="M917.1 424.55C920.02 424.55 922.06 422.59 922.06 419.77C922.06 417.05 920.3 415.21 917.76 415.21C916.78 415.21 916.06 415.53 915.28 416.29L915.22 416.25L920.06 410.65H917.06L914.56 413.63C912.76 415.75 912.02 417.49 912.02 419.53C912.02 422.59 913.98 424.55 917.1 424.55ZM917.04 422.27C915.54 422.27 914.56 421.29 914.56 419.79C914.56 418.31 915.54 417.31 917.02 417.31C918.52 417.31 919.5 418.29 919.5 419.79C919.5 421.27 918.52 422.27 917.04 422.27Z" fill="#1833A0" />
 					</g>
 				</g>
-				<g id="step5" className={classes.platform}>
+				<g id="step5" className={classes.platform + ' ' + classes.disabled}>
 					<g id="Mask group_3">
 						<mask id="mask2_639_1207" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="571" y="271" width="248" height="150">
 							<g id="Group_5">
@@ -906,7 +905,7 @@ export const Map = () => {
 					</g>
 					<path id="Vector_719" d="M757 388.75C767.6 404.584 783.835 415.783 802.402 420.068L812.5 422.398" stroke="#1833A0" strokeWidth="6" />
 				</g>
-				<g id="step4" className={classes.platform}>
+				<g id="step4" className={classes.platform + ' ' + classes.disabled}>
 					<g id="Mask group_6">
 						<mask id="mask5_639_1207" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="380" y="110" width="248" height="149">
 							<g id="Group_13">
@@ -1338,7 +1337,7 @@ export const Map = () => {
 					</g>
 					<path id="Vector_1085" d="M615.407 251.97L614.868 250.897C605.706 232.653 591.689 217.29 574.358 206.5" stroke="#1833A0" strokeWidth="6" />
 				</g>
-				<g id="step3" className={classes.platform}>
+				<g id="step3" className={classes.platform + ' ' + classes.disabled}>
 					<g id="Mask group_9">
 						<mask id="mask8_639_1207" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="190" y="266" width="248" height="150">
 							<g id="Group_24">
@@ -1778,7 +1777,7 @@ export const Map = () => {
 					</g>
 					<path id="Vector_1477" d="M356.626 230.071L357.073 229.553C369.76 214.84 386.038 203.662 404.325 197.104" stroke="#1833A0" strokeWidth="6" />
 				</g>
-				<g id="step2" className={classes.platform}>
+				<g id="step2" className={classes.platform + ' ' + classes.disabled}>
 					<g id="Mask group_11">
 						<mask id="mask10_639_1207" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="379" y="426" width="257" height="154">
 							<g id="Group_28">
@@ -2874,6 +2873,4 @@ export const Map = () => {
 				</clipPath>
 			</defs>
 		</svg>
-
-	</img>
 }
