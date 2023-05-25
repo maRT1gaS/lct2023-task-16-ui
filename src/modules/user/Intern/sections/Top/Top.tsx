@@ -16,11 +16,19 @@ export const Top = () => {
 					<Title headline="h2">Фамилия Имя Отчество</Title>
 					<p>
 						<Title headline="h3">Текущая стажировка:</Title>
-						<Title headline="h3">Название стажировки</Title>
+						<Title headline="h3">
+							<Link href='' themeBorder='none'>
+								Название стажировки
+							</Link>
+						</Title>
 					</p>
 					<p>
 						<Title headline="h4">Твой наставник:</Title>
-						<Title headline="h4">Ссылка на профиль</Title>
+						<Title headline="h4">
+							<Link href='' themeBorder='none'>
+								Ссылка на профиль
+							</Link>
+						</Title>
 					</p>
 					<div className={classes.btns}>
 						<Link themeBorder="black" href=''>Написать наставнику</Link>

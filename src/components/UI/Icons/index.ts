@@ -13,3 +13,4 @@ export { SearchNormalIcon } from './SearchNormalIcon';
 export { LgStarIcon } from './LgStarIcon';
 export { SmStarIcon } from './SmStarIcon';
 export { LocationIcon } from './LocationIcon';
+export { ClockIcon } from './ClockIcon';

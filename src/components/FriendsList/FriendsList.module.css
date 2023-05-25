@@ -32,5 +32,6 @@
 	align-items: center;
 	padding: 0px;
 	gap: 10px;
-	width: 54px;
+	max-width: 25%;
+	height: max-content;
 }
