@@ -5,8 +5,10 @@ export { JobCard } from './JobСard';
 export { NextFonts } from './NextFonts';
 export { StatsCard } from './StatsCard';
 export { Backdrop } from './Backdrop';
-export { ButtonIcon } from './Buttons';
-export { ImageSample } from './ImageSample'
+export { ImageSample } from './ImageSample';
+export { ButtonIcon, Button } from './Buttons';
+export { NextImage } from './NextImage';
+export { RatingStars } from './RatingStars';
 
-export * from './Icons';
+export * from './icons';
 export * from './form';

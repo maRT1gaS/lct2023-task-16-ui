@@ -65,4 +65,6 @@
 
 .IconBox > svg {
 	fill: var(--texas-rose-color);
+	width: 20px;
+	height: 20px;
 }

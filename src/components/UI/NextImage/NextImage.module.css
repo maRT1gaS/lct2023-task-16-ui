@@ -1,0 +1,11 @@
+.Border {
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Border--round {
+	border-radius: 50%;
+}
+
+.Border--rectangular {
+	border-radius: 20px;
+}

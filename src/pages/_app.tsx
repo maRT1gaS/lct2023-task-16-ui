@@ -1,9 +1,9 @@
-import 'normalize.css';
 import '../styles/index.css';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { SWRConfig } from 'swr';
 import { NextFonts } from '@/ui';
+import 'dayjs/locale/ru';
 
 export default function App({ Component, pageProps }: AppProps) {
 	const { fallback } = pageProps;

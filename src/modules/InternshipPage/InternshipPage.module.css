@@ -1,6 +1,45 @@
 .Grid {
-	display: grid;
-	grid-template-columns: 307px auto;
+	display: flex;
+	gap: 35px;
+	margin-top: 25px;
+	column-gap: 35px;
+	position: relative;
+}
+
+@media screen and (max-width: 750px) {
+	.Grid {
+		flex-wrap: wrap;
+	}
+}
+
+.LeftAsidBlock {
+	padding: 12px;
+	box-shadow: 8px 8px 10px 5px rgba(102, 51, 152, 0.1);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: max-content;
+	gap: 12px;
+}
+
+.LeftAsidBlockContent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.LeftAsidBlockContentRatingWrap {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.LeftAsidBlockContentRating {
+	font-weight: 600;
+	font-size: 16px;
 }
 
 .Content {

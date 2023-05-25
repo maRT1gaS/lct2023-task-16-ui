@@ -6,7 +6,7 @@
 		"nameOrg": "ГБУЗ ДСП №43 ДЗМ",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/nsCZMQF/300px.jpg"
+		"imagePreviewImg": "https://i.ibb.co/nsCZMQF/300px.jpg"
 	},
 	{
 		"id": 2,
@@ -15,7 +15,7 @@
 		"nameOrg": "КП Мосгорпечать",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/R477trf/image.png"
+		"imagePreviewImg": "https://i.ibb.co/R477trf/image.png"
 	},
 	{
 		"id": 3,
@@ -24,7 +24,7 @@
 		"nameOrg": "ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
+		"imagePreviewImg": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
 	},
 	{
 		"id": 4,
@@ -33,7 +33,7 @@
 		"nameOrg": "ГБУЗ ДСП №43 ДЗМ",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/nsCZMQF/300px.jpg"
+		"imagePreviewImg": "https://i.ibb.co/nsCZMQF/300px.jpg"
 	},
 	{
 		"id": 5,
@@ -42,8 +42,8 @@
 		"nameOrg": "КП Мосгорпечать",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/R477trf/image.png",
-		"rating": 3,
+		"imagePreviewImg": "https://i.ibb.co/R477trf/image.png",
+		"rating": 3.3,
 		"adress": "Jeremy Martinson 455 Larkspur Dr. California Springs, CA 92926 USA",
 		"startOfTheInternship": "2023-05-01T00:00:00.000Z",
 		"endOfInternship": "2023-05-13T00:00:00.000Z",
@@ -68,7 +68,7 @@
 		"nameOrg": "ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
+		"imagePreviewImg": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
 	},
 	{
 		"id": 7,
@@ -77,6 +77,6 @@
 		"nameOrg": "ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ ГБУЗ ДСП №43 ДЗМ",
 		"startOfSelection": "2023-05-01T00:00:00.000Z",
 		"endOfSelection": "2023-05-13T00:00:00.000Z",
-		"imgSrc": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
+		"imagePreviewImg": "https://i.ibb.co/1TT8v1D/642c96c3f8cfd1e2e4268b91.jpg"
 	}
 ]

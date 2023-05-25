@@ -5,7 +5,7 @@ export interface IJobList {
 	nameOrg: string;
 	startOfSelection: Date;
 	endOfSelection: Date;
-	imgSrc: string;
+	imagePreviewImg: string;
 }
 
 export type ListJobsType = IJobList[];
@@ -17,7 +17,7 @@ export interface IListJobsData {
 
 // Job
 export interface IDetailedJob {
-	imgSrc: string;
+	imagePreviewImg: string;
 	rating: number;
 	nameOrg: string;
 	nameJob: string;

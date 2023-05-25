@@ -5,7 +5,7 @@ export interface IJobRes {
 	nameOrg: string;
 	startOfSelection: Date;
 	endOfSelection: Date;
-	imgSrc: string;
+	imagePreviewImg: string;
 }
 
 export type JobsResType = IJobRes[];
@@ -18,7 +18,7 @@ export interface IJobsRes {
 // GetJobById
 
 export interface IGetJobByIdJobRes {
-	imgSrc: string;
+	imagePreviewImg: string;
 	rating: number;
 	nameJob: string;
 	nameOrg: string;

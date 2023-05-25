@@ -1,6 +1,7 @@
 import { getJobById } from '@/api';
 import { SWR_KEYS } from '@/constants';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import useSWR from 'swr';
 
 export const useInternshipPage = () => {
@@ -11,8 +12,17 @@ export const useInternshipPage = () => {
 		getJobById(query as string)
 	);
 
+	const [isOpenModal, setIsOpenModal] = useState(false);
+
+	const handleOnClickButton = () => {
+		setIsOpenModal(true);
+	};
+
 	return {
 		detailedJob,
 		error,
+		isOpenModal,
+		setIsOpenModal,
+		handleOnClickButton,
 	};
 };

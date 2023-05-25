@@ -43,3 +43,8 @@
 	padding: 0px;
 	gap: 12px;
 }
+
+.item > svg {
+	width: 30px;
+	height: 30px;
+}

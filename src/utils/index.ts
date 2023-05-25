@@ -1,0 +1,1 @@
+export { getFormatDatePeriod } from './date';

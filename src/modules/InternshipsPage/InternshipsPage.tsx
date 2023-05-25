@@ -38,8 +38,8 @@ export const InternshipsPage = () => {
 					<TagsFilter tags={mappedButtonDirectionTags as ButtonTagsType} type='button' activeTags={currentTags} />
 
 					<div className={classes.InternsContainer}>
-						{internshipsMappedJobData.map(({ id, imgSrc, nameJob, options }) => (
-							<JobCard key={id} srcImg={imgSrc} nameJob={nameJob} options={options} id={id} />
+						{internshipsMappedJobData.map(({ id, imagePreviewImg, nameJob, options }) => (
+							<JobCard key={id} srcImg={imagePreviewImg} nameJob={nameJob} options={options} id={id} />
 						))}
 					</div>
 				</div>

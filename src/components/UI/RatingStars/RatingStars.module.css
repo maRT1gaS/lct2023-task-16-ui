@@ -1,0 +1,13 @@
+.StarsWrap {
+	display: flex;
+	gap: 5px;
+	width: max-content;
+}
+
+.ActiveStar > path {
+	fill: var(--texas-rose-color);
+}
+
+.DisabledStart > path {
+	fill: var(--grey-color);
+}

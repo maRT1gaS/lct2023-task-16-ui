@@ -65,7 +65,7 @@ export const useInternshipsPage = () => {
 	}));
 
 	const internshipsMappedJobData =
-		jobsRes?.jobs.map(({ id, imgSrc, nameJob, nameOrg, endOfSelection, startOfSelection }) => {
+		jobsRes?.jobs.map(({ id, imagePreviewImg, nameJob, nameOrg, endOfSelection, startOfSelection }) => {
 			const optionDate = `${dayjs(startOfSelection).locale('ru').format('DD MMMM')} - ${dayjs(endOfSelection)
 				.locale('ru')
 				.format('DD MMMM YYYY')}`;
@@ -83,7 +83,7 @@ export const useInternshipsPage = () => {
 
 			return {
 				id,
-				imgSrc,
+				imagePreviewImg,
 				nameJob,
 				options,
 			};

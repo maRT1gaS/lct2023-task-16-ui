@@ -5,9 +5,9 @@ import classes from './TraineeInterests.module.css';
 import useSWR from 'swr';
 import { getJobs } from '@/api';
 import { SWR_KEYS, directionsTags } from '@/constants';
-import dayjs from 'dayjs';
 import { TagsFilter } from '@/components';
 import { sections_ids } from '../../constants';
+import { getFormatDatePeriod } from '@/utils';
 
 export const TraineeInterests = () => {
 	const { data: jobsData } = useSWR({ key: SWR_KEYS.GetAllJobs, query: { limit: 3 } }, ({ query }) => getJobs(query));
@@ -17,10 +17,8 @@ export const TraineeInterests = () => {
 	});
 
 	const landingMappedJobData =
-		jobsData?.jobs.map(({ id, imgSrc, nameJob, nameOrg, startOfSelection, endOfSelection }) => {
-			const optionDate = `${dayjs(startOfSelection).locale('ru').format('DD MMMM')} - ${dayjs(endOfSelection)
-				.locale('ru')
-				.format('DD MMMM YYYY')}`;
+		jobsData?.jobs.map(({ id, imagePreviewImg, nameJob, nameOrg, startOfSelection, endOfSelection }) => {
+			const optionDate = getFormatDatePeriod(startOfSelection, endOfSelection);
 
 			const options = [
 				{
@@ -35,7 +33,7 @@ export const TraineeInterests = () => {
 
 			return {
 				id,
-				imgSrc,
+				imagePreviewImg,
 				nameJob,
 				options,
 			};
@@ -48,8 +46,8 @@ export const TraineeInterests = () => {
 					<TagsFilter type='link' tags={linkTags} />
 
 					<div className={classes.JobsList}>
-						{landingMappedJobData.map(({ id, imgSrc, nameJob, options }) => (
-							<JobCard key={id} srcImg={imgSrc} id={id} nameJob={nameJob} options={options} />
+						{landingMappedJobData.map(({ id, imagePreviewImg, nameJob, options }) => (
+							<JobCard key={id} srcImg={imagePreviewImg} id={id} nameJob={nameJob} options={options} />
 						))}
 
 						<div className={classes.LookAllWrap}>
