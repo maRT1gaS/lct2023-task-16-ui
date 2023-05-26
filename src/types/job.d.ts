@@ -18,6 +18,7 @@ export interface IListJobsData {
 // Job
 export interface IDetailedJob {
 	imagePreviewImg: string;
+	tag: number;
 	rating: number;
 	nameOrg: string;
 	nameJob: string;

@@ -23,6 +23,8 @@ export const InternshipsPage = () => {
 								<Field type='search' name='search'>
 									{(props) => (
 										<Input
+											labelTitle='Название стажировки'
+											isHiddenLabel
 											placeholder='Введите название стажировки или организатора'
 											rightIcon={<SearchNormalIcon />}
 											id='search'

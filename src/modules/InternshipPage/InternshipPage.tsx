@@ -1,17 +1,31 @@
 import { InternLayout } from '@/layouts';
-import { BriefcaseIcon, Button, CalendarIcon, Container, LocationIcon, NextImage, RatingStars, Title } from '@/ui';
+import {
+	BriefcaseIcon,
+	Button,
+	CalendarIcon,
+	Container,
+	LocationIcon,
+	NextImage,
+	RatingStars,
+	SingostIcon,
+	Title,
+} from '@/ui';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import classes from './InternshipPage.module.css';
 import { useInternshipPage } from './hooks/useInternshipPage';
 import { InfoBlock, Modal, Option } from './components';
 import { getFormatDatePeriod } from '@/utils';
+import { directionsTags } from '@/constants';
 
 export const InternshipPage = () => {
-	const { detailedJob, error, isOpenModal, handleOnClickButton } = useInternshipPage();
+	const { detailedJob, error, isOpenModal, handleOnClickButton, handleOnCloseModal, handleOnSubmitForm } =
+		useInternshipPage();
 
 	if (error || !detailedJob) {
 		return null;
 	}
+
+	const directionName = directionsTags.find(({ id }) => id === detailedJob.tag)?.title;
 
 	return (
 		<InternLayout>
@@ -37,6 +51,8 @@ export const InternshipPage = () => {
 								title='Организатор перевозок, Государственное казенное учреждение города Москвы'
 								icon={<BriefcaseIcon />}
 							/>
+
+							<Option title={`Направление:\n${directionName}`} icon={<SingostIcon />} />
 
 							<Option
 								title={`Период отбора:\n${getFormatDatePeriod(detailedJob.startOfSelection, detailedJob.endOfSelection)}`}
@@ -65,25 +81,29 @@ export const InternshipPage = () => {
 							<InfoBlock title='Обязанности:' content={detailedJob.responsibilities} />
 							<InfoBlock title='Требования:' content={detailedJob.requirements} />
 							<InfoBlock title='Условия:' content={detailedJob.conditions} />
-							<div style={{ width: '100%' }}>
-								<YMaps>
-									<Map
-										width='99%'
-										defaultState={{
-											center: [detailedJob.coordinates.latitude, detailedJob.coordinates.longitude],
-											zoom: 15,
-										}}
-									>
-										<Placemark geometry={[detailedJob.coordinates.latitude, detailedJob.coordinates.longitude]} />
-									</Map>
-								</YMaps>
-							</div>
+							<YMaps>
+								<Map
+									width='99%'
+									defaultState={{
+										center: [detailedJob.coordinates.latitude, detailedJob.coordinates.longitude],
+										zoom: 15,
+									}}
+								>
+									<Placemark geometry={[detailedJob.coordinates.latitude, detailedJob.coordinates.longitude]} />
+								</Map>
+							</YMaps>
 						</div>
 					</div>
 				</div>
 			</Container>
 
-			{isOpenModal && <Modal />}
+			{isOpenModal && (
+				<Modal
+					initialValue={{ nameJob: detailedJob.nameJob, direction: directionName || '' }}
+					handleOnSubmitForm={handleOnSubmitForm}
+					onClose={handleOnCloseModal}
+				/>
+			)}
 		</InternLayout>
 	);
 };

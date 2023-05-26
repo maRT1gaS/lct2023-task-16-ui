@@ -3,6 +3,7 @@ import { SWR_KEYS } from '@/constants';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import useSWR from 'swr';
+import { IValueForm } from '../types';
 
 export const useInternshipPage = () => {
 	const {
@@ -18,11 +19,21 @@ export const useInternshipPage = () => {
 		setIsOpenModal(true);
 	};
 
+	const handleOnCloseModal = () => {
+		setIsOpenModal(false);
+	};
+
+	const handleOnSubmitForm = (values: IValueForm) => {
+		console.log(values);
+	};
+
 	return {
 		detailedJob,
 		error,
 		isOpenModal,
 		setIsOpenModal,
 		handleOnClickButton,
+		handleOnCloseModal,
+		handleOnSubmitForm,
 	};
 };

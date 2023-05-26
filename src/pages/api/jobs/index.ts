@@ -19,7 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		}
 
 		const lengthJobsList = jobListJSON.length;
-		console.log(limit);
+
 		if (limit !== null) {
 			const limiitJobs = jobListJSON.slice(Number(-limit));
 

@@ -1,4 +1,4 @@
-import { Backdrop, ButtonIcon, CloseIcon, MenuIcon } from '@/ui';
+import { Backdrop, ButtonIcon, CrossIcon, MenuIcon } from '@/ui';
 import { PropsWithChildren, useRef } from 'react';
 import classes from './LeftSideNavModal.module.css';
 import cn from 'classnames';
@@ -29,7 +29,7 @@ export const LeftSideNavModal = ({ children }: PropsWithChildren) => {
 				<Backdrop onClick={handleOnClickClose}>
 					<div className={cn(classes.ModalNav, classes.ModalAnimOpen)} ref={modalRef}>
 						<ButtonIcon
-							icon={<CloseIcon withBorder={false} />}
+							icon={<CrossIcon withBorder={false} />}
 							buttonSize='sm'
 							borderRound={false}
 							onClick={handleOnClickClose}
