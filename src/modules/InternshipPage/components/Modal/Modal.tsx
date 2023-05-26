@@ -39,6 +39,16 @@ export const Modal = ({ onClose, initialValue, handleOnSubmitForm }: IModalProps
 										/>
 									)}
 								</Field>
+								<Field name='cameFrom'>
+									{(props) => (
+										<Input
+											labelTitle='Откуда ты узнал(а) о стажировке?'
+											className={classes.InternshipApplicationInput}
+											id='cameFrom'
+											{...props.input}
+										/>
+									)}
+								</Field>
 
 								<div className={classes.InternshipApplicationFormControls}>
 									<Button themeBorder='black' type='submit'>
