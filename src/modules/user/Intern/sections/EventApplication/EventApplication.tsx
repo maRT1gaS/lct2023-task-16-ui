@@ -8,9 +8,9 @@ export const EventApplication = () => {
 			<div className={classes.section}>
 				<Title headline='h3'>Заявки на посещение мероприятий</Title>
 				<div className={classes.cards}>
-					<ApplicationCard/>
-					<ApplicationCard/>
-					<ApplicationCard/>
+					<ApplicationCard />
+					<ApplicationCard />
+					<ApplicationCard />
 				</div>
 			</div>
 		</Container>

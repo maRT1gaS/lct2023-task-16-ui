@@ -17,25 +17,25 @@
 }
 
 .aspirant {
-	color: var(--texas-rose-color)
+	color: var(--texas-rose-color);
 }
 
 .intern {
-	color: var(--mariner-color)
+	color: var(--mariner-color);
 }
 
 .alumnus {
-	color: var(--green-color)
+	color: var(--green-color);
 }
 
 .employee {
-	color: var(--torch-red-color)
+	color: var(--torch-red-color);
 }
 
 .mentor {
-	color: var(--violet-color)
+	color: var(--violet-color);
 }
 
 .moderator {
-	color: var(--orange-dark-color)
+	color: var(--orange-dark-color);
 }

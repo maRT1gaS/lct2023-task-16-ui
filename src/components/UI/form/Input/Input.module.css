@@ -31,7 +31,7 @@
 	clip-path: inset(50%);
 }
 
-.IconWrap>svg {
+.IconWrap > svg {
 	width: 24px;
 	height: 24px;
 }
