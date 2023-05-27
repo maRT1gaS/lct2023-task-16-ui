@@ -25,3 +25,7 @@
 .additional {
 	color: var(--grey-color)
 }
+
+.error {
+	color: var(--torch-red-color)
+}
