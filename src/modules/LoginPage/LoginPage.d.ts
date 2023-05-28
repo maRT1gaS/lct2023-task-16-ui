@@ -4,5 +4,5 @@ export interface ILoginFormProps {
 
 export interface ILoginValue {
 	email: string;
-	password: string
+	password: string;
 }

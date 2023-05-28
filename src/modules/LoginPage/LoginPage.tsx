@@ -10,43 +10,30 @@ const validationSchema = Yup.object().shape({
 });
 
 export const LoginPage = ({ handleOnSubmitForm }: ILoginFormProps) => {
-
 	return (
-		<Form<ILoginValue> onSubmit={handleOnSubmitForm} validate={(values) => validationSchema.validateSync(values, { abortEarly: false })}>
+		<Form<ILoginValue>
+			onSubmit={handleOnSubmitForm}
+			validate={(values) => validationSchema.validateSync(values, { abortEarly: false })}
+		>
 			{(props) => (
 				<form className={classes.LoginForm} onSubmit={props.handleSubmit}>
 					<div className={classes.LoginInput}>
 						<Field name='email'>
-							{(props) => (
-								<Input
-									labelTitle='Email'
-									className={classes.LoginInput}
-									id='email'
-									{...props.input}
-								/>
-							)}
+							{(props) => <Input labelTitle='Email' className={classes.LoginInput} id='email' {...props.input} />}
 						</Field>
-						<Field name="email">
+						<Field name='email'>
 							{({ meta }) => (meta.error && meta.touched ? <span className={classes.error}>{meta.error}</span> : null)}
 						</Field>
 					</div>
 
 					<div className={classes.LoginInput}>
 						<Field name='password'>
-							{(props) => (
-								<Input
-									labelTitle='Пароль'
-									className={classes.LoginInput}
-									id='password'
-									{...props.input}
-								/>
-							)}
+							{(props) => <Input labelTitle='Пароль' className={classes.LoginInput} id='password' {...props.input} />}
 						</Field>
-						<Field name="password" >
+						<Field name='password'>
 							{({ meta }) => (meta.error && meta.touched ? <span className={classes.error}>{meta.error}</span> : null)}
 						</Field>
 					</div>
-
 
 					<div className={classes.LoginFormControls}>
 						<Button themeBorder='red' type='submit'>
@@ -59,9 +46,7 @@ export const LoginPage = ({ handleOnSubmitForm }: ILoginFormProps) => {
 					</div>
 
 					<div className={classes.LoginFormControls}>
-						<span className={classes.additional}>
-							Еще нет аккаунта?
-						</span>
+						<span className={classes.additional}>Еще нет аккаунта?</span>
 
 						<Link themeBorder='red' href='/auth/registration'>
 							Зарегистрироваться
@@ -70,5 +55,5 @@ export const LoginPage = ({ handleOnSubmitForm }: ILoginFormProps) => {
 				</form>
 			)}
 		</Form>
-	)
-}
+	);
+};
