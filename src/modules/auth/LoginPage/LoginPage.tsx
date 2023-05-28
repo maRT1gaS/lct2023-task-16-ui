@@ -1,5 +1,5 @@
 import { Form, Field } from 'react-final-form';
-import { Button, Input, Link } from '@/ui';
+import { Input, Link } from '@/ui';
 import classes from './LoginPage.module.css';
 import type { ILoginValue } from './LoginPage.d';
 import { InternLayout } from '@/layouts';
