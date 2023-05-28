@@ -1,3 +1,5 @@
-const LoginPage = () => <h1>LoginPage</h1>;
+import { LoginPage as LoginPageCmp } from '@/modules';
+
+const LoginPage = () => <LoginPageCmp />;
 
 export default LoginPage;
