@@ -14,22 +14,22 @@ export const Top = () => {
 				</div>
 				<div className={classes.info}>
 					<Title headline='h2'>Фамилия Имя Отчество</Title>
-					<p>
+					<div>
 						<Title headline='h3'>Текущая стажировка:</Title>
 						<Title headline='h3'>
 							<Link href='' themeBorder='none'>
 								Название стажировки
 							</Link>
 						</Title>
-					</p>
-					<p>
+					</div>
+					<div>
 						<Title headline='h4'>Твой наставник:</Title>
 						<Title headline='h4'>
 							<Link href='' themeBorder='none'>
 								Ссылка на профиль
 							</Link>
 						</Title>
-					</p>
+					</div>
 					<div className={classes.btns}>
 						<Link themeBorder='black' href=''>
 							Написать наставнику
