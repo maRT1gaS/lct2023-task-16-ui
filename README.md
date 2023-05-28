@@ -16,44 +16,34 @@
 
 # Разворачивание проекта:
 
-## 
     Первый вариант:
 
-### 
     Шаг первый:
 
     **npm install** или **npm ci**
 
-### 
     Шаг второй:
 
-#### 
     Для разработки:
 
 **
     npm run dev**
 
-#### 
     Для production:
 
     **npm run build** **&& npm run start**
 
-
     В браузере ->**http://localhost:3000/**
 
-## 
     Второй вариант(production):
 
-### 
     Шаг первый:
 
     **docker build -t lct2023-task16-ui .**
 
-### 
     Шаг второй:
 
-    **docker run --name lct2023-task16-ui -p 3000:3000 lct2023-task16-ui**
-
+    **docker run --name lct2023-task16-ui -p 3000:3000 -d lct2023-task16-ui**
 
     В браузере ->**http://localhost:3000/**
 
