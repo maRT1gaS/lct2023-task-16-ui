@@ -28,9 +28,9 @@ export const LoginPage = () => {
 							</div>
 
 							<div className={classes.LoginFormControls}>
-								<Button themeBorder='red' type='submit'>
+								<Link themeBorder='red' href='/intern'>
 									Войти
-								</Button>
+								</Link>
 
 								<Link className={classes.additional} themeBorder='none' href='/'>
 									Забыли пароль?
