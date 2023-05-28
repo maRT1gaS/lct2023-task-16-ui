@@ -1,6 +1,7 @@
 .Title--h1 {
 	font-weight: 700;
 	font-size: 64px;
+	line-height: 58px;
 }
 
 @media screen and (max-width: 550px) {
@@ -12,25 +13,29 @@
 .Title--h2 {
 	font-size: 48px;
 	font-weight: 700;
+
 }
 
 .Title--h3 {
 	font-weight: 600;
 	font-size: 40px;
-	line-height: 24px;
+	line-height: 48px;
 }
 
 .Title--h4 {
 	font-weight: 600;
 	font-size: 36px;
+	line-height: 44px;
 }
 
 .Title--h5 {
 	font-size: 24px;
 	font-weight: 500;
+	line-height: 29px;
 }
 
 .Title--h6 {
 	font-size: 20px;
 	font-weight: 500;
+	line-height: 24px;
 }

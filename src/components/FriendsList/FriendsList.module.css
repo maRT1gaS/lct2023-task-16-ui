@@ -5,6 +5,8 @@
 	padding: 24px;
 	gap: 16px;
 	width: 100%;
+	box-shadow: 8px 8px 10px 5px rgba(102, 51, 152, 0.1);
+	border-radius: 20px;
 }
 
 .heading {
@@ -34,4 +36,5 @@
 	gap: 10px;
 	max-width: 25%;
 	height: max-content;
+	text-align: center;
 }

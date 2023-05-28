@@ -1,9 +1,14 @@
 import { InternLayout } from '@/layouts';
+import {Top, Tasks, InternshipsPlaces, EventApplication, ProjectApplication } from './sections'
 
 export const HomePage = () => {
 	return (
 		<InternLayout>
-			<h1>Test</h1>
+			<Top/>
+			<Tasks/>
+			<InternshipsPlaces/>
+			<EventApplication/>
+			<ProjectApplication/>
 		</InternLayout>
 	);
 };

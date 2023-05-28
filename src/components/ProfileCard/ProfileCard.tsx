@@ -1,14 +1,14 @@
 import classes from './ProfileCard.module.css';
 import { Link, Title, NextImage } from '@/ui';
-import cn from 'classnames';
-import type { IProfileCardProps } from './ProfileCard.d';
+// import cn from 'classnames';
+// import type { IProfileCardProps } from './ProfileCard.d';
 
 export const ProfileCard = () =>
 	// { id, role, roleClass }: IProfileCardProps
 	{
 		return (
 			<div className={classes.card}>
-				<NextImage alt='' src='/images/gradient.png' format='round' width={225} />
+				<NextImage alt='' src='/images/gradient.png' format='round' width={225} height={225}/>
 				<Link themeBorder='black' href=''>
 					Открыть публичный профиль
 				</Link>

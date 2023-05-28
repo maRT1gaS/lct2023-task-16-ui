@@ -13,28 +13,28 @@ export const FriendsList = () =>
 				</p>
 				<div className={classes.friends}>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' />
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' />
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' />
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' />
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
 						<span>
 							{/* {name} */}
 							Имя Фамилия
