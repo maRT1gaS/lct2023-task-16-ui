@@ -1,0 +1,28 @@
+.AdminLayout {
+    display: grid;
+    grid-template-columns: 255px auto;
+    overflow: hidden;
+}
+
+.AdminLayoutLeftSide {
+    height: 100%;
+    padding: 25px 0;
+}
+
+.AdminLayoutRightSide {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+.AdminLayoutLeftSideHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AdminLayoutNav {
+    width: 100%;
+}

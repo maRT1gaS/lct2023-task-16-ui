@@ -1,0 +1,13 @@
+.Hint {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.Hint--error {
+    color: var(--torch-red-color);
+}
+
+.Hint--info {
+    color: var(--haiti-color);
+}

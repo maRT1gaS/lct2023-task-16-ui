@@ -5,6 +5,6 @@ export interface IInputProps extends HTMLAttributes<HTMLInputElement> {
 	rightIcon?: ReactNode;
 	id: string;
 	disabled?: boolean;
-	labelTitle: string;
+	labelTitle?: string;
 	isHiddenLabel?: boolean;
 }

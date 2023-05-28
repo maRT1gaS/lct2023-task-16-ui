@@ -2,6 +2,10 @@
 	position: relative;
 }
 
+.InputIconWrap {
+	position: relative;
+}
+
 .IconWrap {
 	position: absolute;
 	top: 0;
@@ -10,30 +14,10 @@
 	align-items: center;
 }
 
-.Label {
-	display: inline-block;
-	font-weight: 400;
-	font-size: 16px;
-	margin-bottom: 10px;
-}
-
-.LabelHidden {
-	position: absolute;
-
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-
-	width: 0.1rem;
-	height: 0.1rem;
-	margin: -0.1rem;
-
-	white-space: nowrap;
-	clip-path: inset(50%);
-}
-
-.IconWrap > svg {
+.IconWrap>svg {
 	width: 24px;
 	height: 24px;
+	fill: var(--haiti-color);
 }
 
 .LeftIcon {

@@ -1,20 +1,22 @@
 import { CareerPortalLogo } from '@/ui';
+import { PropsWithChildren } from 'react';
+import classes from './AdminLayout.module.css';
 
-export const AdminLayout = () => {
+export const AdminLayout = ({ children }: PropsWithChildren) => {
 	return (
-		<main>
-			<div>
-				<div>
+		<main className={classes.AdminLayout}>
+			<div className={classes.AdminLayoutLeftSide}>
+				<div className={classes.AdminLayoutLeftSideHeader}>
 					<CareerPortalLogo />
-					<nav>
+					<nav className={classes.AdminLayoutNav}>
 						<ul>
-							<li>Ча</li>
+							<li>d</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 
-			<div></div>
+			<div className={classes.AdminLayoutRightSide}>{children}</div>
 		</main>
 	);
 };

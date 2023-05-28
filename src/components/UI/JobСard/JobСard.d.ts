@@ -9,7 +9,7 @@ export type OptionsType = IOption[];
 
 export interface IJobCardProps {
 	id: number;
-	srcImg: string;
+	srcImg: string | null;
 	nameJob: string;
 	options: OptionsType;
 }

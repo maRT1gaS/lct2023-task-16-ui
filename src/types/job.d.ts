@@ -3,9 +3,9 @@ export interface IJobList {
 	id: number;
 	nameJob: string;
 	nameOrg: string;
-	startOfSelection: Date;
-	endOfSelection: Date;
-	imagePreviewImg: string;
+	startOfSelection: Date | null;
+	endOfSelection: Date | null;
+	imagePreviewImg: string | null;
 }
 
 export type ListJobsType = IJobList[];

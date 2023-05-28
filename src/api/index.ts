@@ -1,3 +1,3 @@
 export * from './endpoints';
 
-export { apiInstance } from './instance';
+export { localApiInstance } from './instance';

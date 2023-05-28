@@ -9,11 +9,11 @@ export const directionsTags = [
 	},
 	{
 		id: 3,
-		title: 'HR-город',
+		title: 'Комфортная городская среда',
 	},
 	{
 		id: 4,
-		title: 'Комфортная городская среда',
+		title: 'HR-город',
 	},
 	{
 		id: 5,

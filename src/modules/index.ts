@@ -1,3 +1,6 @@
 export { LandingPage } from './LandingPage';
-export { InternshipsPage } from './InternshipsPage';
-export { InternshipPage } from './InternshipPage';
+export { InternshipPage } from './internships/InternshipPage';
+
+export * from './intern';
+export * from './internships';
+export * from './admin';
