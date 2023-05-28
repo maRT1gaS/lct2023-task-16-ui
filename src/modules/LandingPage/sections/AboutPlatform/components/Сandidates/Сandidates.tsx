@@ -14,7 +14,7 @@ export const Сandidates = () => (
 			</span>
 
 			<Link href='/auth/registration' themeBorder='black'>
-				Зарегистироваться
+				Зарегистрироваться
 			</Link>
 		</div>
 
