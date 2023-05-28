@@ -1,4 +1,4 @@
-import { LgStarIcon, SmStarIcon } from '../icons';
+import { LgStarIcon, SmStarIcon } from '../Icons';
 import type { IRatingStarsProps } from './RatingStars.d';
 import classes from './RatingStars.module.css';
 

@@ -9,5 +9,5 @@ export { ButtonIcon, Button } from './Buttons';
 export { NextImage } from './NextImage';
 export { RatingStars } from './RatingStars';
 
-export * from './icons';
+export * from './Icons';
 export * from './form';
