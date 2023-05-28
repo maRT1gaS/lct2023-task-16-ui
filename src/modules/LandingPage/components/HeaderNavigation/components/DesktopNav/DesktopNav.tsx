@@ -1,5 +1,5 @@
 import classes from './DesktopNav.module.css';
-import type { IDesktopNavProps } from './DesktopNav';
+import type { IDesktopNavProps } from './DesktopNav.d';
 import { Link } from '@/ui';
 
 export const DesktopNav = ({ navConfig = [] }: IDesktopNavProps) => (

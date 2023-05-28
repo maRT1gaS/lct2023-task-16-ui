@@ -1,2 +1,3 @@
-export { getStatsPlatform } from './stats-platform';
-export * from './job';
+export { getStatsPlatform } from './statistic';
+export * from './vacancies';
+export { createVacancies } from './admin-vacancies';

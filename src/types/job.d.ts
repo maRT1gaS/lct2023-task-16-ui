@@ -17,23 +17,24 @@ export interface IListJobsData {
 
 // Job
 export interface IDetailedJob {
+	id: number;
 	imagePreviewImg: string;
-	tag: number;
+	tag: number | null;
 	rating: number;
 	nameOrg: string;
 	nameJob: string;
 	adress: string;
-	startOfSelection: Date;
-	endOfSelection: Date;
-	startOfTheInternship: Date;
-	endOfInternship: Date;
-	coordinates: CoordinatesRes;
+	startOfSelection: Date | null;
+	endOfSelection: Date | null;
+	startOfTheInternship: Date | null;
+	endOfInternship: Date | null;
+	coordinates: CoordinatesRes | null;
 	responsibilities: string[];
 	requirements: string[];
 	conditions: string[];
 }
 
 interface CoordinatesRes {
-	latitude: number;
-	longitude: number;
+	latitude: number | null;
+	longitude: number | null;
 }

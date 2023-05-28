@@ -5,18 +5,6 @@ import { getJobs, getStatsPlatform } from '@/api';
 import { SWR_KEYS } from '@/constants';
 import { unstable_serialize } from 'swr';
 
-const LandingPage = () => (
-	<>
-		<Head>
-			<title>Старт карьеры в Правительстве Москвы</title>
-		</Head>
-
-		<LandingPageCmp />
-	</>
-);
-
-export default LandingPage;
-
 export const getStaticProps: GetStaticProps = async () => {
 	const statsPlatform = await getStatsPlatform();
 
@@ -33,3 +21,15 @@ export const getStaticProps: GetStaticProps = async () => {
 		},
 	};
 };
+
+const LandingPage = () => (
+	<>
+		<Head>
+			<title>Старт карьеры в Правительстве Москвы</title>
+		</Head>
+
+		<LandingPageCmp />
+	</>
+);
+
+export default LandingPage;

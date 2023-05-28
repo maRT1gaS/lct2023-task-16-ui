@@ -1,9 +1,9 @@
 import type { IDetailedJob, IListJobsData } from '@/types';
-import { localApiInstance, apiInstance } from '../instance';
+import { apiInstance } from '../instance';
 import type { GetJobsResType, IGetJobByIdJobRes } from '../models';
 import { mappedGetJobs } from '../adapters';
 import qs from 'qs';
-import { mappedGetJobById } from '../adapters/job';
+import { mappedGetJobById } from '../adapters/vacancies';
 
 interface IGetJobsQueryParam {
 	limit?: number;
@@ -19,7 +19,7 @@ export const getJobs = async (queryParams: IGetJobsQueryParam = {}): Promise<ILi
 };
 
 export const getJobById = async (id: string): Promise<IDetailedJob> => {
-	const resData = (await localApiInstance.get<IGetJobByIdJobRes>(`/jobs/${id}`)).data;
+	const resData = (await apiInstance.get<IGetJobByIdJobRes>(`/vacancies/${id}`)).data;
 
 	return mappedGetJobById(resData);
 };

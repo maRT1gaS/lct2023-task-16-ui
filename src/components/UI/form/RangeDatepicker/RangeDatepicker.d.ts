@@ -1,4 +1,6 @@
-export interface IRangeDatepickerProps {
+import type { ReactDatePickerProps } from 'react-datepicker';
+
+export interface IRangeDatepickerProps extends ReactDatePickerProps {
 	id: string;
 	lableTitle: string;
 	isHiddenLable?: boolean;

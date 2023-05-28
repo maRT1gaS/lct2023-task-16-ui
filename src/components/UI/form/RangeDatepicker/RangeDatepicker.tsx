@@ -18,6 +18,7 @@ export const RangeDatepicker = ({ lableTitle, id, isHiddenLable, onChange }: IRa
 
 	return (
 		<Datepicker
+			autoComplete='off'
 			wrapperClassName={classes.RangeDatepicker}
 			lableTitle={lableTitle}
 			selected={start}

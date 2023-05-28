@@ -8,11 +8,6 @@ export const AdminLayout = ({ children }: PropsWithChildren) => {
 			<div className={classes.AdminLayoutLeftSide}>
 				<div className={classes.AdminLayoutLeftSideHeader}>
 					<CareerPortalLogo />
-					<nav className={classes.AdminLayoutNav}>
-						<ul>
-							<li>d</li>
-						</ul>
-					</nav>
 				</div>
 			</div>
 

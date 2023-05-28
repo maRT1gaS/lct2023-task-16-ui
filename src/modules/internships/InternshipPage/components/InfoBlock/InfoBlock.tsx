@@ -1,5 +1,5 @@
 import { Title } from '@/ui';
-import type { IInfoBlockProps } from './InfoBlock';
+import type { IInfoBlockProps } from './InfoBlock.d';
 import classes from './InfoBlock.module.css';
 
 export const InfoBlock = ({ title, content }: IInfoBlockProps) => (

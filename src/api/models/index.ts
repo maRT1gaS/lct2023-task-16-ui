@@ -1,2 +1,2 @@
-export * from './stats-platform-res.d';
-export * from './job-res';
+export * from './statistic-res';
+export * from './vacancies-res';

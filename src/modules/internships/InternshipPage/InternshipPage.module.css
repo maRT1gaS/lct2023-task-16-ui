@@ -12,7 +12,7 @@
 	}
 }
 
-.LeftAsidBlock {
+.LeftAsideBlock {
 	padding: 12px;
 	box-shadow: 8px 8px 10px 5px rgba(102, 51, 152, 0.1);
 	border-radius: 20px;
@@ -22,6 +22,10 @@
 	align-items: center;
 	height: max-content;
 	gap: 12px;
+}
+
+.RightAsideBlock {
+	flex: 1;
 }
 
 .LeftAsidBlockContent {
@@ -46,4 +50,5 @@
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+	width: 100%;
 }

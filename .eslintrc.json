@@ -15,7 +15,7 @@
 		"no-unused-vars": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"prettier/prettier": [
-			"error",
+			"off",
 			{
 				"endOfLine": "auto"
 			}

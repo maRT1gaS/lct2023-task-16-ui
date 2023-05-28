@@ -18,7 +18,15 @@ export const Modal = ({ onClose, initialValue, handleOnSubmitForm }: IModalProps
 						{(props) => (
 							<form className={classes.InternshipApplicationForm} onReset={handleOnReset} onSubmit={props.handleSubmit}>
 								<Field name='direction'>
-									{(props) => <Select labelTitle='Выберите направление' isDisabled id='direction' {...props.input} />}
+									{(props) => (
+										<Select
+											className={classes.InternshipApplicationInput}
+											labelTitle='Выберите направление'
+											isDisabled
+											id='direction'
+											{...props.input}
+										/>
+									)}
 								</Field>
 
 								<Field name='nameJob'>

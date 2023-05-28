@@ -6,11 +6,16 @@ const nextConfig = {
   output: 'standalone',
   images: {
     remotePatterns: [
-      // TODO: поменять hostname на адрес со статикой
       {
-        protocol: "https",
+        protocol: "http",
         port: "",
-        hostname: "i.ibb.co/**"
+        hostname: "188.72.109.183",
+        pathname: "/media/**"
+      },
+      {
+        protocol: 'http',
+        port: "3000",
+        hostname: "localhost/**"
       }
     ]
   },

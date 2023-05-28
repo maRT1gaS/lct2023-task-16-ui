@@ -3,7 +3,7 @@ import classes from './Map.module.css';
 export const Map = () => {
 	return (
 		<svg className={classes.map} viewBox='0 0 1008 615' fill='none' xmlns='http://www.w3.org/2000/svg'>
-			<g id='map' clip-path='url(#clip0_639_1207)'>
+			<g id='map' clipPath='url(#clip0_639_1207)'>
 				<g id='extra' className={classes.platform}>
 					<g id='Frame 288'>
 						<path

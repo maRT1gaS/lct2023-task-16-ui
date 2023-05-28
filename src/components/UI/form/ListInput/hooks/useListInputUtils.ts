@@ -73,11 +73,16 @@ export const useListInputUtils = ({ uniquePrefixId, value, onChange }: IUseListI
 			if (arrayVal.length === 1 && !trimVal) {
 				return '';
 			}
-			if (index === arrayVal.length - 1) {
-				return `& ${trimVal}`;
+
+			if (index === 0) {
+				return trimVal;
 			}
 
-			return `& ${trimVal}\n`;
+			if (index === arrayVal.length - 1) {
+				return `&${trimVal}`;
+			}
+
+			return `&${trimVal}\n`;
 		});
 
 		const valueForm = valueWithSeparator.join('');

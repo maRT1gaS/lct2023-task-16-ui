@@ -8,7 +8,7 @@ export const ProfileCard = () =>
 	{
 		return (
 			<div className={classes.card}>
-				<NextImage alt='' src='/images/gradient.png' format='round' width={225} height={225}/>
+				<NextImage alt='' src='/images/gradient.png' format='round' width={225} height={225} />
 				<Link themeBorder='black' href=''>
 					Открыть публичный профиль
 				</Link>

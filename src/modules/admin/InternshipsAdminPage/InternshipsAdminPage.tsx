@@ -3,10 +3,30 @@ import { Button, Input, ListInput, RangeDatepicker, Select, Title, UploadImage }
 import { Field, Form } from 'react-final-form';
 import { directionsTags } from '@/constants';
 import classes from './InternshipsAdminPage.module.css';
+import { createVacancies } from '@/api';
+import dayjs from 'dayjs';
 
 export const InternshipsAdminPage = () => {
-	const onHandleOnSubmit = (value: any) => {
-		console.log(value);
+	const onHandleOnSubmit = async (value: any) => {
+		const copyValueData = { ...value };
+		copyValueData.company = 1;
+		copyValueData.status = -1;
+		copyValueData.rating = 3;
+		copyValueData.tag = copyValueData.tag.value;
+
+		const [startOfSelection, endOfSelection] = copyValueData.dateOfSelection;
+		delete copyValueData.dateOfSelection;
+
+		copyValueData.startOfSelection = dayjs(startOfSelection).format('YYYY-MM-DD');
+		copyValueData.endOfSelection = dayjs(endOfSelection).format('YYYY-MM-DD');
+
+		const [startOfTheInternship, endOfInternship] = copyValueData.dateOfTheInternship;
+		delete copyValueData.dateOfTheInternship;
+
+		copyValueData.startOfTheInternship = dayjs(startOfTheInternship).format('YYYY-MM-DD');
+		copyValueData.endOfInternship = dayjs(endOfInternship).format('YYYY-MM-DD');
+
+		await createVacancies(copyValueData);
 	};
 
 	const options = directionsTags.map(({ id, title }) => ({ value: id, label: title }));
@@ -23,7 +43,7 @@ export const InternshipsAdminPage = () => {
 								<fieldset className={classes.FormInputsGroup}>
 									<legend className={classes.FormInputsGroupLegend}>Основная информация</legend>
 									<div className={classes.FormInputRow}>
-										<Field name='previewImgSrc'>
+										<Field name='imagePreviewImg'>
 											{(props) => <UploadImage className={classes.GridImg} accept={{ 'image/*': [] }} {...props.input} />}
 										</Field>
 										<Field name='nameJob'>
@@ -31,15 +51,9 @@ export const InternshipsAdminPage = () => {
 												<Input id='nameJob' className={classes.GridNameJob} labelTitle='Название вакансии' {...props.input} />
 											)}
 										</Field>
-										<Field name='direction'>
+										<Field name='tag'>
 											{(props) => (
-												<Select
-													instanceId='direction'
-													options={options}
-													id='direction'
-													labelTitle='Выберите направление'
-													{...props.input}
-												/>
+												<Select instanceId='tag' options={options} id='tag' labelTitle='Выберите направление' {...props.input} />
 											)}
 										</Field>
 

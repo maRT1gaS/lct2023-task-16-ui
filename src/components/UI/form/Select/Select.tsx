@@ -5,8 +5,8 @@ import cn from 'classnames';
 import { FieldLable } from '../FieldLable';
 
 export const Select = ({ className, id, isHiddenLabel = false, labelTitle, ...selectProps }: ISelectProps) => (
-	<div>
+	<div className={cn(className)}>
 		<FieldLable id={id} isHiddenLabel={isHiddenLabel} labelTitle={labelTitle} />
-		<ReactSelect className={cn(classes.Select, className)} {...selectProps} />
+		<ReactSelect className={cn(classes.Select)} {...selectProps} />
 	</div>
 );

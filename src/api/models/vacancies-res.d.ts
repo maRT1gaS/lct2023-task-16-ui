@@ -15,26 +15,10 @@ interface IJobGetJobsRes {
 
 export type GetJobsResType = IJobGetJobsRes[];
 
-//TODO: при маштабировании
-// export interface IJobRes {
-// 	id: number;
-// 	nameJob: string;
-// 	nameOrg: string;
-// 	startOfSelection: Date;
-// 	endOfSelection: Date;
-// 	imagePreviewImg: string;
-// }
-
-// export type JobsResType = IJobRes[];
-
-// export interface IJobsRes {
-// 	length: number;
-// 	jobs: JobsResType;
-// }
-
 // GetJobById
 
 export interface IGetJobByIdJobRes {
+	id: number;
 	imagePreviewImg: string;
 	rating: number;
 	tag: number;

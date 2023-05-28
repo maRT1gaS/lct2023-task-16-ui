@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Технологии:
 
-## Getting Started
+* React 18.2.0
+* Next.js 13.4.2
+* PWA
+* TypeScript 5.0.4
+* NodeJS
+* NPM
+* Docker
 
-First, run the development server:
+# Требования для запуска:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* NodeJS >= 16.14.0
+* NPM >= 8.3.1
+* Docker
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Разворачивание проекта:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 
+    Первый вариант:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 
+    Шаг первый:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    **npm install** или **npm ci**
 
-## Learn More
+### 
+    Шаг второй:
 
-To learn more about Next.js, take a look at the following resources:
+#### 
+    Для разработки:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**
+    npm run dev**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### 
+    Для production:
 
-## Deploy on Vercel
+    **npm run build** **&& npm run start**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    В браузере ->**http://localhost:3000/**
+
+## 
+    Второй вариант(production):
+
+### 
+    Шаг первый:
+
+    **docker build -t lct2023-task16-ui .**
+
+### 
+    Шаг второй:
+
+    **docker run --name lct2023-task16-ui -p 3000:3000 lct2023-task16-ui**
+
+
+    В браузере ->**http://localhost:3000/**
+
+# О проекте:
+
+* http://localhost:3000/ - лендинг
+* http://localhost:3000/internships - просмотр доступных стажировок на платформе
+* http://localhost:3000/internships/{id} - просмотр детальной информации о стажировке и подаче на нее заявки
+* http://localhost:3000/admin/internships - административная часть платформы для сотрудников компании, на данный момент там можно только создать
+* http://localhost:3000/intern - часть платформы для кандидатов/стажёров, на данный момент статична, в планах на даработку
+* http://localhost:3000/auth/login - авторизация/регистрация через SSO, на ролевой модели(функционал не реализован)
+
+# Планы на будующее:
+
+* Доработка ЛК для компаний с ролевой моделью  HR/Наставник
+* Доработка ЛК стажёра/кандидата с геймификацией
+* Интеграция авторизации SSO с ролевой моделью
+* Интеграция календаря мероприятий/карьерный треков
+* Разработка "Магазин подарков за бонусы"
+* Разработка Аналитического дашборда
+* Разработка чата на основе WebSocket для коммуникации стажёров/компаний/кураторов
+* Разработка административной части внутри платформы(Headless CMS) для кураторов
+* Разработка рейтингования сущностей платформы

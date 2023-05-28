@@ -31,7 +31,7 @@ export const InternshipPage = () => {
 		<InternLayout>
 			<Container>
 				<div className={classes.Grid}>
-					<div className={classes.LeftAsidBlock}>
+					<div className={classes.LeftAsideBlock}>
 						<NextImage
 							format='rectangular'
 							src={detailedJob.imagePreviewImg}
@@ -52,7 +52,7 @@ export const InternshipPage = () => {
 								icon={<BriefcaseIcon />}
 							/>
 
-							<Option title={`Направление:\n${directionName}`} icon={<SingostIcon />} />
+							{directionName && <Option title={`Направление:\n${directionName}`} icon={<SingostIcon />} />}
 
 							<Option
 								title={`Период отбора:\n${getFormatDatePeriod(detailedJob.startOfSelection, detailedJob.endOfSelection)}`}
@@ -74,24 +74,27 @@ export const InternshipPage = () => {
 							Подать заявку
 						</Button>
 					</div>
-					<div>
+					<div className={classes.RightAsideBlock}>
 						<Title headline='h1'>{detailedJob.nameJob}</Title>
 
 						<div className={classes.Content}>
 							<InfoBlock title='Обязанности:' content={detailedJob.responsibilities} />
 							<InfoBlock title='Требования:' content={detailedJob.requirements} />
 							<InfoBlock title='Условия:' content={detailedJob.conditions} />
-							<YMaps>
-								<Map
-									width='99%'
-									defaultState={{
-										center: [detailedJob.coordinates.latitude, detailedJob.coordinates.longitude],
-										zoom: 15,
-									}}
-								>
-									<Placemark geometry={[detailedJob.coordinates.latitude, detailedJob.coordinates.longitude]} />
-								</Map>
-							</YMaps>
+
+							{detailedJob.coordinates && detailedJob.coordinates.latitude && detailedJob.coordinates.longitude && (
+								<YMaps>
+									<Map
+										width='99%'
+										defaultState={{
+											center: [detailedJob.coordinates.latitude, detailedJob.coordinates.longitude],
+											zoom: 15,
+										}}
+									>
+										<Placemark geometry={[detailedJob.coordinates.latitude, detailedJob.coordinates.longitude]} />
+									</Map>
+								</YMaps>
+							)}
 						</div>
 					</div>
 				</div>

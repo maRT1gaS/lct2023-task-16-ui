@@ -1,4 +1,4 @@
-import type { IOptionProps } from './Option';
+import type { IOptionProps } from './Option.d';
 import classes from './Option.module.css';
 
 export const Option = ({ title, icon }: IOptionProps) => (

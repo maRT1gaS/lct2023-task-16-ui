@@ -1,2 +1,2 @@
-export { mappedGetStatsPlatform } from './stats-platform';
-export { mappedGetJobs } from './job';
+export { mappedGetStatsPlatform } from './statistic';
+export { mappedGetJobs } from './vacancies';

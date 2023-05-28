@@ -1,6 +1,6 @@
 import { Title, NextImage } from '@/ui';
 import classes from './FriendsList.module.css';
-import type { IFriendsProps } from './FriendsList.d';
+// import type { IFriendsProps } from './FriendsList.d';
 
 export const FriendsList = () =>
 	// {count, name, photo}: IFriendsProps
@@ -13,28 +13,28 @@ export const FriendsList = () =>
 				</p>
 				<div className={classes.friends}>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50} />
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50} />
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50} />
 						<span>
 							{/* {name} */}
 							Имя Фамилия
 						</span>
 					</div>
 					<div className={classes.friendItem}>
-						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50}/>
+						<NextImage alt='' src='/images/gradient.png' format='round' width={50} height={50} />
 						<span>
 							{/* {name} */}
 							Имя Фамилия
